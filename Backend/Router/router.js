@@ -28,7 +28,7 @@ router.post(
 
 router.get("/blogData", async (req, res) => {
   const data = await blog.find({});
-  res.send(data);
+  res.json(data);
 });
 
 router.delete("/deletepost/:id", deletePost);
