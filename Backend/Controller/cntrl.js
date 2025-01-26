@@ -52,7 +52,7 @@ async function blogify(req, res) {
       Video: videoFile ? `/Uploads/${videoFile.filename}` : null,
     });
 
-    res.status(201).send({
+    res.status(201).json({
       message: "Post created successfully",
       post,
     });
